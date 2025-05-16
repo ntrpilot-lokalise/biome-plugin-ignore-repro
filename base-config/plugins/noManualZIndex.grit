@@ -1,0 +1,6 @@
+language css
+
+`z-index: $zIndexValue;` where {
+	not $zIndexValue <: r"^var\(--dt-z-index-\S+\)$",
+	register_diagnostic(span=$zIndexValue, message="company/plugin/noManualZIndex :: z-index values should be set using the design library.", severity="error")
+}

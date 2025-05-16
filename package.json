@@ -1,0 +1,13 @@
+{
+	"name": "biome-ignore-repro",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"lint": "biome check .",
+		"format": "biome check . --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.0-beta.4"
+	}
+}
